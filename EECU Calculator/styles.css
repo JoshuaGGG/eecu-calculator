@@ -1,0 +1,143 @@
+body{
+    margin: 0px;
+    background-color: #E8F3FC;
+}
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color: #0A5BA8;
+}
+footer{
+    background-color: #0A5BA8;
+}
+h1{
+    font-family:Arial, Helvetica, sans-serif;
+    padding-top:50px;
+    padding-left: 40px;
+    font-size: 340%;
+}
+.careerbox{
+    margin: 0,auto;
+    height: 235vh;
+    top: 50px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 10px #000000;
+}
+.whole-search-container{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left:40px;
+}
+.career-search{
+    padding-left: 20px;
+    font-size: 200%;
+    box-shadow: 0px 0px 1px #000000;
+    width: 40%;
+    height: 7vh;
+}
+.search-button{
+    box-shadow: 0px 0px 0px #000000;
+    justify-content: end;
+    background-color: #FFFFFF;
+}
+.career-list{
+    float: left;
+    list-style-type: none;
+    font-size: 200%;
+}
+.money-list{
+    float: right;
+    list-style-type: none;
+    font-size: 200%; 
+    
+}
+.h1-pay{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.careerbox2{
+    margin: 0px auto;
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 10px #000000;
+}
+.tax-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.tax-list{
+    list-style: none;
+}
+.federal-taxes{
+    font-size: 200%;
+}
+.federal-taxes-input{
+    width: 20%;
+    height: 4vh;
+}
+.state-taxes{
+    font-size: 200%;
+}
+.state-taxes-input{
+    width: 20%;
+    height: 4vh;
+}
+.social-security{
+    font-size: 200%;
+}
+.social-security-input{
+    width: 20%;
+    height: 4vh;
+}
+.medicare{
+    font-size: 200%;
+}
+.medicare-input{
+    width: 20%;
+    height: 4vh;
+}
+.state-disability{
+    font-size:200%;
+}
+.state-disability-input{
+    width: 20%;
+    height: 4vh;
+}
+.retirement-investment{
+    font-size: 200%;
+}
+.retirement-investment-input{
+    width: 20%;
+    height: 4vh;
+}
+.medicare-insurance{
+    font-size: 200%;
+}
+.medicare-insurance-input{
+    width: 20%;
+    height: 4vh;
+}
+.total-deductions{
+    font-size: 200%;
+}
+.total-deductions-input{
+    width: 20%;
+    height: 4vh;
+}
+.gross-income{
+    font-size: 200%;
+}
+.gross-income-input{
+    width: 20%;
+    height: 4vh;
+}
+.net-income{
+    font-size: 200%;
+}
+.net-income-input{
+    width: 20%;
+    height: 4vh;
+}
