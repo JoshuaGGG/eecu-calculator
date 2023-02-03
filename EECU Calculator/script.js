@@ -1,37 +1,45 @@
-const careerList = document.querySelectorAll('.career');
-
+const careerList = document.getElementsByClassName('career');
+console.log(careerList);
 
 var selectedCareer = document.querySelector(".career[data-value='$34,650-$147,000']");
 
-let federalTaxes= document.querySelector(".federal-taxes-input").value 
+federalTaxes=document.getElementById("federalText")
+statetaxes=document.getElementById("stateText")
+socialSecurity=document.getElementById("socialText"),
+medicareText=document.getElementById("medicareText"),
+stateDisability=document.getElementById("stateText"),
+retirementInvestment=document.getElementById("retirementText"),
+medicareInsurance=document.getElementById("insuranceText"), 
+totalDeductions=document.getElementById("totalText"),
+grossIncome=document.getElementById("grossText"),
+netIncome=document.getElementById("netText")
 
 
-
-
-
- let statetaxes=document.querySelector(".state-taxes-input").value,
-
-socialSecurity=document.querySelector(".social-security-input").value,
-medicare=document.querySelector(".medicare-input").value,
-document.querySelector(".state-disability-input").value = stateDisability;
-document.querySelector(".retirement-investment-input").value = retirementInvestment;
-document.querySelector(".medicare-insurance-input").value = medicareInsurance;
-document.querySelector(".total-deductions-input").value = totalDeductions;
-document.querySelector(".gross-income-input").value = grossIncome;
-document.querySelector(".net-income-input").value = netIncome;
-
-
-careerList.forEach(career) 
-    career.addEventListener('click'), (event) => {
-  var careerValue = event.target.dataset.value;
-  var federalTaxes = careerValue * 0.12;
-  var stateTaxes = careerValue * 0.07;
-  var socialSecurity = careerValue * 0.062;
-  var medicare = careerValue * 0.0145;
-  var stateDisability = careerValue * 0.01;
-  var retirementInvestment = careerValue * 0.05;
+for (let index = 0; index < careerList.length; index++) {
+  const element = careerList[index];
+    element.addEventListener('click', function() {
+  var careerValue = this.dataset.value;
+  careerValue=parseInt(careerValue);
+  let monthlyIncome =careerValue/12
+  var federalTaxes = monthlyIncome * 0.12;
+  federalText.innerText=federalTaxes.toFixed(2);
+  var stateTaxes = monthlyIncome * 0.07;
+  stateText.innerText=stateTaxes.toFixed(2);
+  var socialSecurity = monthlyIncome * 0.062;
+  socialText.innerText=socialSecurity.toFixed(2);
+  var medicare = monthlyIncome * 0.0145;
+  medicareText.innerText=medicare.toFixed(2);
+  var stateDisability = monthlyIncome * 0.01;
+  stateText.innerText=stateDisability.toFixed(2);
+  var retirementInvestment = monthlyIncome * 0.05;
+  retirementText.innerText=retirementInvestment.toFixed(2);
   var medicareInsurance = 180.00;
+  insuranceText.innerText=medicareInsurance.toFixed(2);
   var totalDeductions = federalTaxes + stateTaxes + socialSecurity + medicare + stateDisability + retirementInvestment + medicareInsurance;
+  totalText.innerText=totalDeductions.toFixed(2);
   var grossIncome = careerValue;
+  grossText.innerText=grossIncome.toFixed(2);
   var netIncome = careerValue - totalDeductions;
+  netText.innerText=netIncome.toFixed(2);
+})
 }

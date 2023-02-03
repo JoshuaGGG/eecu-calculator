@@ -90,6 +90,8 @@ main{
     list-style: none;
 }
 .federal-taxes{
+    display: flex;
+    flex-wrap: wrap;
     font-size: 150%;
 }
 .federal-taxes-input{
@@ -97,6 +99,8 @@ main{
     height: 4vh;
 }
 .state-taxes{
+    display: flex;
+    flex-wrap: wrap;
     font-size: 150%;
 }
 .state-taxes-input{
@@ -104,6 +108,8 @@ main{
     height: 4vh;
 }
 .social-security{
+    display: flex;
+    flex-wrap: wrap;
     font-size: 150%;
 }
 .social-security-input{
@@ -111,6 +117,8 @@ main{
     height: 4vh;
 }
 .medicare{
+    display: flex;
+    flex-wrap: wrap;
     font-size: 150%;
 }
 .medicare-input{
@@ -118,6 +126,8 @@ main{
     height: 4vh;
 }
 .state-disability{
+    display: flex;
+    flex-wrap: wrap;
     font-size:150%;
 }
 .state-disability-input{
@@ -125,6 +135,8 @@ main{
     height: 4vh;
 }
 .retirement-investment{
+    display: flex;
+    flex-wrap: wrap;
     font-size: 150%;
 }
 .retirement-investment-input{
@@ -132,6 +144,8 @@ main{
     height: 4vh;
 }
 .medicare-insurance{
+    display: flex;
+    flex-wrap: wrap;
     font-size: 150%;
 }
 .medicare-insurance-input{
@@ -139,6 +153,8 @@ main{
     height: 4vh;
 }
 .total-deductions{
+    display: flex;
+    flex-wrap: wrap;
     font-size: 150%;
 }
 .total-deductions-input{
@@ -146,6 +162,8 @@ main{
     height: 4vh;
 }
 .gross-income{
+    display: flex;
+    flex-wrap: wrap;
     font-size: 150%;
 }
 .gross-income-input{
@@ -153,6 +171,8 @@ main{
     height: 4vh;
 }
 .net-income{
+    display: flex;
+    flex-wrap: wrap;
     font-size: 150%;
 }
 .net-income-input{
@@ -178,4 +198,8 @@ table{
 }
 table tr{
     background-color: white;
+}
+.rightSpace{
+    display: flex;
+    flex-wrap: wrap;
 }
