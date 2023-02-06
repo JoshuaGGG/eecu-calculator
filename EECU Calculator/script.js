@@ -1,4 +1,5 @@
 let availableKeywords =[
+                  'Accountant',
                  'Advance Tractor/Trailer Driver',
                   'Agricultural Engineer',
                   'Architect',
@@ -50,7 +51,7 @@ let availableKeywords =[
                   'Nutritionist',
                  'Oceanographer',
                   'Pastor',
-                  'PG&E\AT8&T Technician',
+                  'PG&E AT8&T Technician',
                  'Pharmacist',
                   'Photographer',
                  'Physical Therapist',
@@ -148,6 +149,8 @@ for (let index = 0; index < careerList.length; index++) {
   netText.innerText=netIncome.toFixed(2);
 })
 }
+
+
 
 
 
