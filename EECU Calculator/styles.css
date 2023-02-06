@@ -3,50 +3,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body{
     box-sizing: border-box;
     margin: 0px;
     background-color: #E8F3FC;
-}
-.container{
-   display: flex;
-   flex-wrap: wrap;
-}
-.calculator{
-    background: #3a4452;
-    padding: 20px;
-    border-radius: 10px;
-}
-.calculator form input{
-    border: 0;
-    outline: 0;
-    width: 60px;
-    height: 60px;
-    border-radius: 10px;
-    box-shadow: -8px -8px 15px rgba(255,255,255,0.1), 5px 5px 15px rgba(0,0,0,0.2);
-    background: transparent;
-    font-size: 20px;
-    color: #fff;
-    cursor: pointer;
-    margin: 10px;
-}
-form.display{
-    display: flex;
-    justify-content: flex-end;
-    margin: 20px 0;
-}
-form .display input{
-    text-align: right;
-    flex: 1;
-    font-size: 45px;
-    box-shadow: none;
-
-}
-form input.equal{
-    width: 145px;
-}
-form input.operator{
-    color: #33ffd8;
 }
 .hero{
     width: 100%;
@@ -57,7 +18,47 @@ form input.operator{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.calculator{
+    background: #333;
+    padding: 20px;
+    border-radius: 10px;
+}
+.calculator form input{
+    border: 0;
+    outline: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    box-shadow: -8px -8px 15px rgba(255,255,255,0.1),5px 5px 15px rgba(0,0,0,0.2);
+    background: transparent;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    margin: 10px;
 
+}
+form .display{
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0;
+}
+form .displayinput{
+    text-align: right;
+    flex: 1;
+    font-size: 45px;
+    box-shadow: none;
+}
+form input.equal{
+    width: 145px;
+
+}
+form input.operator{
+    color:yellow;
 }
 nav{
     width: 100%;
@@ -68,6 +69,9 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+.logo{
+    cursor: pointer;
 }
 nav.logo{
     width: 80px;
@@ -106,9 +110,6 @@ nav.logo{
         width: auto;
         height: 100%;
     }
-}
-footer{
-    background-color: #0A5BA8;
 }
 h1{
     font-family: Arial, Helvetica, sans-serif;
@@ -194,7 +195,7 @@ button .fa-solid{
 .result-box ul li{
     list-style: none;
     border-radius: 3px;
-    padding: 15px;
+    padding: 15px 10px;
     cursor: pointer;
 }
 .result-box ul li:hover{
@@ -231,6 +232,10 @@ button .fa-solid{
     flex-wrap: wrap;
     justify-content: center;
 }
+.pay{
+    text-align: center;
+    padding-top: 40px;
+}
 .careerbox2{
     overflow-y: scroll;
     padding: 20px;
@@ -244,7 +249,6 @@ button .fa-solid{
     font-size: 20px;
     display: flex;
     flex-wrap: wrap;
-   padding: 20px 50px;
    padding-top: 50px;
 }
 .tax-list{
@@ -375,4 +379,62 @@ table tr{
 .rightSpace{
     display: flex;
     flex-wrap: wrap;
+}
+.footer{
+    margin-top: 100px;
+    width: 100%;
+    padding: 100px 15%;
+    background: #333;
+    color: #efefee;
+    display: flex;
+}
+.footer div{
+    text-align: center;
+}
+.col-2{
+    flex-grow: 2;
+}
+.footer div h3{
+    font-weight: 300;
+    font-size: 35px;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+.col-1 a{
+    font-size: 20px;
+    display: block;
+    text-decoration: none;
+    color: #efefef;
+    margin-bottom: 10px;
+}
+form input{
+    background-color: #efefef;
+    width: 400px;
+    height: 45px;
+    border-radius: 4px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    outline: none;
+    border: none;
+}
+form button{
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    border-radius: 30px;
+    padding: 10px 30px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.social-icons{
+    margin-top: 30px;
+}
+.social-icons i{
+    font-size: 50px;
+    margin: 10px;
+    cursor: pointer;
+}
+.col-3 p{
+    font-size: 25px;
 }
