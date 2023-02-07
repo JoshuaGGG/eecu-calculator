@@ -149,6 +149,17 @@ for (let index = 0; index < careerList.length; index++) {
   netText.innerText=netIncome.toFixed(2);
 })
 }
+const addRow = document.getElementById("add-row")
+addRow.addEventListener("click", function(){
+
+})
+const table = document.querySelector("#table tbody")
+console.log(table);
+
+for (let index = 0; index < addRow.length; index++) {
+  const element = addRow[index];
+  
+}
 
 
 
