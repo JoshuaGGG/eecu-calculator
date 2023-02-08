@@ -375,7 +375,16 @@ td{
     text-align: center;
 }
 #add-row{
-    
+   width: 100px;
+   height: 20px;
+   border-radius: 4px;
+   background-color: #efefef;
+}
+#remove-row{
+    width: 100px;
+   height: 20px;
+   border-radius: 4px;
+   background-color: #efefef;
 }
 table tr{
     background-color: white;

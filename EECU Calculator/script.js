@@ -149,17 +149,26 @@ for (let index = 0; index < careerList.length; index++) {
   netText.innerText=netIncome.toFixed(2);
 })
 }
+const table = document.querySelector("#table tbody")
 const addRow = document.getElementById("add-row")
 addRow.addEventListener("click", function(){
-
-})
-const table = document.querySelector("#table tbody")
-console.log(table);
-
-for (let index = 0; index < addRow.length; index++) {
-  const element = addRow[index];
-  
+  let row;
+  row = table.insertRow(-1);
+for (let index = 0; index < 5; index++) {
+  let cell=row.insertCell(index);
+  cell.innerHTML ='<input type="text">'
 }
+})
+ const removeRow = document.getElementById("remove-row")
+ removeRow.addEventListener("click"  ,function() {
+  console.log(table.children);
+  table.deleteRow(-1)
+ })
+
+
+
+
+
 
 
 
