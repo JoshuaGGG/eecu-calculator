@@ -105,7 +105,7 @@ var selectedCareer = document.querySelector(".career[data-value='$34,650-$147,00
 
 
 federalTaxes=document.getElementById("federalText")
-stateTaxes=document.getElementById("stateText")
+stateTaxes=document.getElementById("stateText"),
 socialSecurity=document.getElementById("socialText"),
 medicareText=document.getElementById("medicareText"),
 stateDisability=document.getElementById("disabilityText"),
@@ -114,7 +114,10 @@ medicareInsurance=document.getElementById("insuranceText"),
 totalDeductions=document.getElementById("totalText"),
 totalDeductions=document.getElementById("twoText")
 grossIncome=document.getElementById("grossText"),
-netIncome=document.getElementById("netText")
+netIncome=document.getElementById("netText"),
+withdrawalIncome=document.getElementById("withdrawalText")
+depositIncome=document.getElementById("depositText")
+balanceIncome=document.getElementById("balanceText")
 
 
 
@@ -147,6 +150,11 @@ for (let index = 0; index < careerList.length; index++) {
   grossText.innerText=grossIncome.toFixed(2);
   var netIncome = careerValue - totalDeductions;
   netText.innerText=netIncome.toFixed(2);
+  var balanceIncome = careerValue - totalDeductions;
+  balanceText.innerText=balanceIncome.toFixed(2);
+  var withdrawalIncome =
+  withdrawalText.innerText=withdrawalIncome.toFixed(2);
+  
 })
 }
 const table = document.querySelector("#table tbody")
@@ -164,6 +172,9 @@ for (let index = 0; index < 5; index++) {
   console.log(table.children);
   table.deleteRow(-1)
  })
+
+
+
 
 
 

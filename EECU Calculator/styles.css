@@ -145,7 +145,7 @@ main{
     height: 75vh;
     top: 50px;
     background-color: #FFFFFF;
-    box-shadow: 0px 0px 10px #000000;
+    box-shadow: -8px -8px 15px rgba(255,255,255,0.1),5px 5px 15px rgba(0,0,0,0.2);
     overflow-y: scroll;
 }
 .search-box{
@@ -241,7 +241,7 @@ button .fa-solid{
     height: 75vh;
     margin-right: 50px;
     background-color: #FFFFFF;
-    box-shadow: 0px 1px 10px #000000;
+    box-shadow: -8px -8px 15px rgba(255,255,255,0.1),5px 5px 15px rgba(0,0,0,0.2);
 }
 .tax-container{
     font-size: 15px;
@@ -357,34 +357,54 @@ button .fa-solid{
     padding: 10px;
     font-size: 300%;
     font-weight:400;
-    padding-bottom: 20px;
 }
 .table-section{
+    overflow-y: scroll;
     margin: 0 auto;
     padding: 20px;
     width:85%;
     background-color:#FFFFFF;
-    box-shadow: 0px 1px 10px #000000;
+    box-shadow: -8px -8px 15px rgba(255,255,255,0.1),5px 5px 15px rgba(0,0,0,0.2);
 }
 table{
     background-color: #333;
     width: 100%;
     font-size: 150%;
+    box-sizing: border-box;
 }
 td{
     text-align: center;
+    padding: 10px;
+}
+.row-buttons{
+    text-align: right;
 }
 #add-row{
-   width: 100px;
-   height: 20px;
-   border-radius: 4px;
-   background-color: #efefef;
+    position: relative;
+    border: 0;
+    outline: 0;
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    box-shadow: -8px -8px 15px rgba(255,255,255,0.1),5px 5px 15px rgba(0,0,0,0.2);
+    background: transparent;
+    font-size: 15px;
+    color: black;
+    cursor: pointer;
+    margin: 10px;
 }
 #remove-row{
+    position: relative;
+    border: 0;
+    outline: 0;
     width: 100px;
-   height: 20px;
-   border-radius: 4px;
-   background-color: #efefef;
+    height: 40px;
+    border-radius: 10px;
+    box-shadow: -8px -8px 15px rgba(255,255,255,0.1),5px 5px 15px rgba(0,0,0,0.2);
+    background: transparent;
+    font-size: 15px;
+    color: black;
+    cursor: pointer;
 }
 table tr{
     background-color: white;
@@ -454,4 +474,7 @@ form button{
 }
 .col-3 p{
     font-size: 25px;
+}
+@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {
+
 }
