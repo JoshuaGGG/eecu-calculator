@@ -114,11 +114,8 @@ medicareInsurance=document.getElementById("insuranceText"),
 totalDeductions=document.getElementById("totalText"),
 totalDeductions=document.getElementById("twoText")
 grossIncome=document.getElementById("grossText"),
-netIncome=document.getElementById("netText"),
-withdrawalIncome=document.getElementById("withdrawalText")
-depositIncome=document.getElementById("depositText")
-balanceIncome=document.getElementById("balanceText")
-
+netIncome=document.getElementById("netText")
+// balanceIncome=document.getElementById("balanceText")
 
 
 
@@ -150,11 +147,25 @@ for (let index = 0; index < careerList.length; index++) {
   grossText.innerText=grossIncome.toFixed(2);
   var netIncome = careerValue - totalDeductions;
   netText.innerText=netIncome.toFixed(2);
-  var balanceIncome = careerValue - totalDeductions;
-  balanceText.innerText=balanceIncome.toFixed(2);
-  var withdrawalIncome =
-  withdrawalText.innerText=withdrawalIncome.toFixed(2);
-  
+  // var balanceIncome = careerValue;
+  // balanceText.innerText=balanceIncome.toFixed(2);
+ const withdrawalInput = document.getElementById("withdrawalText");
+ const depositInput = document.getElementById("depositText");
+ const balanceInput = document.getElementById("balanceText");
+ 
+ balanceInput.value = balance.toFixed(2);
+ 
+ withdrawalInput.addEventListener("input", function() {
+   let withdrawalAmount = parseFloat(withdrawalInput.value);
+   balance -= withdrawalAmount;
+   balanceInput.value = balance.toFixed(2);
+ });
+ 
+ depositInput.addEventListener("input", function() {
+   let depositAmount = parseFloat(depositInput.value);
+   balance += depositAmount;
+   balanceInput.value = balance.toFixed(2);
+ });
 })
 }
 const table = document.querySelector("#table tbody")
@@ -172,6 +183,12 @@ for (let index = 0; index < 5; index++) {
   console.log(table.children);
   table.deleteRow(-1)
  })
+ 
+ 
+
+ 
+ 
+
 
 
 
